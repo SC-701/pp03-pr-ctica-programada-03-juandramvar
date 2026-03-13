@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Abstracciones.Modelos
 {
-    public class Propietario
+    public class Modelo
     {
-        public string Placa { get; set; }
-        public string Email { get; set; }
+        public Guid Id { get; set; }
+        public Guid IdMarca { get; set; }
+        public string Nombre { get; set; }
     }
 }

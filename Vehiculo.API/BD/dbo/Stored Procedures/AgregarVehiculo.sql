@@ -4,7 +4,7 @@
 -- Description:	<Description,,>
 -- =============================================
 CREATE PROCEDURE AgregarVehiculo
-	-- Add the parameters for the stored procedure here
+	-- Add the parameters for the stored procedure heree
 	@Id AS uniqueidentifier
 	,@IdModelo AS uniqueidentifier
 	,@Placa AS varchar(max)

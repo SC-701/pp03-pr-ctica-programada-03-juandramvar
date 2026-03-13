@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Abstracciones.Modelos
 {
-    public class Propietario
+    public class Falta
     {
-        public string Placa { get; set; }
-        public string Email { get; set; }
+        public string Tipo { get; set; }
+        public string Descripcion { get; set; }
     }
 }

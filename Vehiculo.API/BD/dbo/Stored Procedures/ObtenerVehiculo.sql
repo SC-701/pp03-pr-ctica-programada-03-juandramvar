@@ -13,9 +13,9 @@ BEGIN
 	SET NOCOUNT ON;
 
     -- Insert statements for procedure here
-SELECT        Vehiculo.Id, Vehiculo.IdModelo, Vehiculo.Placa, Vehiculo.Color, Vehiculo.Anio, Vehiculo.Precio, Vehiculo.CorreoPropietario, Vehiculo.TelefonoPropietario, Modelos.Nombre AS Modelo, Marcas.Nombre AS Marca
-FROM            Vehiculo INNER JOIN
-                         Modelos ON Vehiculo.IdModelo = Modelos.Id INNER JOIN
-                         Marcas ON Modelos.IdMarca = Marcas.Id
-WHERE        (Vehiculo.Id = @Id)
+	SELECT        Vehiculo.Id, Vehiculo.IdModelo, Vehiculo.Placa, Vehiculo.Color, Vehiculo.Anio, Vehiculo.Precio, Vehiculo.CorreoPropietario, Vehiculo.TelefonoPropietario, Modelos.Nombre AS Modelo, Marcas.Nombre AS Marca
+	FROM            Vehiculo INNER JOIN
+							 Modelos ON Vehiculo.IdModelo = Modelos.Id INNER JOIN
+							 Marcas ON Modelos.IdMarca = Marcas.Id
+	WHERE        (Vehiculo.Id = @Id)
 END

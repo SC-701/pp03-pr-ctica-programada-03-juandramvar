@@ -1,7 +1,7 @@
 ﻿-- =============================================
--- Author:		<Author,,Name>
--- Create date: <Create Date,,>
--- Description:	<Description,,>
+-- Author:		Author,,Name>
+-- Create date: Create Date,,>
+-- Description:	Description,,>
 -- =============================================
 CREATE PROCEDURE EditarVehiculo
 	-- Add the parameters for the stored procedure here
@@ -21,15 +21,15 @@ BEGIN
 
     -- Insert statements for procedure here
 	BEGIN TRANSACTION
-	UPDATE [dbo].[Vehiculo]
-	SET [IdModelo] = @IdModelo
-	, [Placa] = @Placa
-	,[Color] =@Color
-	,[Anio] = @Anio
-	,[Precio] = @Precio
-	,[CorreoPropietario] = @CorreoPropietario
-	, [TelefonoPropietario] = @TelefonoPropietario
-	WHERE Id=@Id
-	SELECT @Id
+		UPDATE [dbo].[Vehiculo]
+	   SET [IdModelo] = @IdModelo
+		  ,[Placa] = @Placa
+		  ,[Color] = @Color
+		  ,[Anio] = @Anio
+		  ,[Precio] = @Precio
+		  ,[CorreoPropietario] = @CorreoPropietario
+		  ,[TelefonoPropietario] = @TelefonoPropietario
+		WHERE Id=@Id
+		SELECT @Id
 	COMMIT TRANSACTION
 END
